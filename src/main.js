@@ -11,8 +11,8 @@ Vue.config.productionTip = false;
 // Date Filter
 Vue.filter("formatDate", function(value) {
   if (value) {
-    console.log(typeof value);
-    return moment(String(value)).format("DD/MM/YYYY");
+    const covertToDate = new Date(parseInt(value)).toISOString();
+    return moment(String(covertToDate)).format("DD/MM/YYYY");
   }
 });
 

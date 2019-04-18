@@ -1,39 +1,39 @@
-# Included scalars
+# # Included scalars
 
-# A Student sends by users
-type Student {
-  id
-  firstName
-  lastName
-  birthDate
-  # hobbies
-}
-
-
-# Input from user to create a student
-input student {
-  # student content
-  text: String!
-}
+# # A Student sends by users
+# type Student {
+#   id
+#   firstName
+#   lastName
+#   birthDate
+#   # hobbies
+# }
 
 
-type Query {
-  # Test query with a parameter
-  students(id: String): String!
+# # Input from user to create a student
+# input student {
+#   # student content
+#   text: String!
+# }
 
-}
 
-type Mutation {
+# type Query {
+#   # Test query with a parameter
+#   students(id: String): String!
+
+# }
+
+# type Mutation {
   
-  addStudent (input: student!): Student!
-  deleteStudent (input: student!): Student!
-  editStudent (input: student!): Student!
+#   addStudent (input: student!): Student!
+#   deleteStudent (input: student!): Student!
+#   editStudent (input: student!): Student!
 
-}
+# }
 
-type Subscription {
-  # This will update every 2 seconds
-  deleteStudent: Student!
-  # When a new message is added
-  addStudent: Student!
-}
+# type Subscription {
+#   # This will update every 2 seconds
+#   deleteStudent: Student!
+#   # When a new message is added
+#   addStudent: Student!
+# }

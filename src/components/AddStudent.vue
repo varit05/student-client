@@ -74,7 +74,7 @@ export default {
           variables: {
             firstName: this.firstName,
             lastName: this.lastName,
-            birthDate: this.birthDate,
+            birthDate: new Date(this.birthDate).toISOString(),
             photo: this.photo,
             hobbies: this.hobbies
           }
