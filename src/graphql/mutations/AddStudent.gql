@@ -1,0 +1,18 @@
+#import "../fragments/StudentFragment.gql"
+mutation(
+  $firstName: String!
+  $lastName: String!
+  $birthDate: String!
+  # $hobbies: [String]
+  $photo: String!
+) {
+  addStudent(
+    firstName: $firstName
+    lastName: $lastName
+    birthDate: $birthDate
+    # hobbies: $hobbies
+    photo: $photo
+  ) {
+    ...Student
+  }
+}

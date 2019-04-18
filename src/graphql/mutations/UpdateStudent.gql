@@ -1,0 +1,16 @@
+#import "../fragments/StudentFragment.gql"
+mutation updateStudent(
+  $id: String!
+  $firstName: String!
+  $lastName: String!
+) # $birthDate: String!
+{
+  updateStudent(
+    id: $id
+    firstName: $firstName
+    lastName: $lastName
+  ) # birthDate: $birthDate
+  {
+    ...Student
+  }
+}

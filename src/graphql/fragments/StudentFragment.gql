@@ -1,0 +1,7 @@
+fragment Student on student {
+  id
+  firstName
+  lastName
+  birthDate
+  # hobbies
+}

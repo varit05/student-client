@@ -1,0 +1,7 @@
+#import "../fragments/StudentFragment.gql"
+
+query($id: String!) {
+  students(id: $id) {
+    ...Student
+  }
+}
