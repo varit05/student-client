@@ -3,5 +3,5 @@ fragment Student on student {
   firstName
   lastName
   birthDate
-  # hobbies
+  hobbies
 }

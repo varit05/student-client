@@ -3,14 +3,14 @@ mutation(
   $firstName: String!
   $lastName: String!
   $birthDate: String!
-  # $hobbies: [String]
+  $hobbies: String!
   $photo: String!
 ) {
   addStudent(
     firstName: $firstName
     lastName: $lastName
     birthDate: $birthDate
-    # hobbies: $hobbies
+    hobbies: $hobbies
     photo: $photo
   ) {
     ...Student

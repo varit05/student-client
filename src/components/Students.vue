@@ -28,7 +28,11 @@
                   </td>
                   <td v-text="student.lastName"></td>
                   <td>{{student.birthDate | formatDate}}</td>
-                  <td v-text="student.hobbies"></td>
+                  <td v-if="student.hobbies">
+                    <span v-for="(hobby, $index) in student.hobbies" :key="$index">
+                      {{hobby}}
+                    </span>
+                  </td>
                   <td>
                     <router-link
                       class="btn btn-outline-primary"
